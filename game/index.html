@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <h1>Rock Paper Scissors</h1>
+    <div>
+
+
+        <div id="rule_box">
+
+            <div id="rule">
+                <h3>1. Player Interaction:</h3>
+                <p id="rule_id">Players make their choice by clicking on buttons representing rock, paper, or scissors.
+                </p>
+                <h3>2. Computer Choice:</h3>
+                <p id="rule_id">The computer randomly selects one of the options (rock, paper, or scissors) as its
+                    choice.
+                </p>
+                <h3>3. Determining the Winner:</h3>
+                <p id="rule_id">Compare the player's choice with the computer's choice to determine the winner based on
+                    the
+                    rules:</p>
+                <ul>
+                    <li>Rock beats scissors.</li>
+                    <li>Scissors beats paper.</li>
+                    <li>Paper beats rock.</li>
+                    <li>If both players choose the same item, it's a tie.</li>
+                </ul>
+                <h3>4. Displaying the Result:</h3>
+                <p id="rule_id">After both players have made their choice, wait for 2 seconds before displaying the
+                    result.
+                    This delay adds anticipation and excitement to the game.</p>
+
+                <input type="checkbox" id="agreeCheckbox" required>
+                <label for="agreeCheckbox">I confirm that I have read and agree to the rules</label>
+            </div>
+
+            <button id="startButton" onclick="displayGame()">Start?</button>
+        </div>
+
+        <div id="game">
+            <div class="choices">
+                <div class="choice" id="rock">
+                    <img src="https://static.onecompiler.com/images/posts/424tuqs3h/rock.png" />
+                </div>
+                <div class="choice" id="paper">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-uUJ95coXG4S6muY3hZmDmctXeMCLGU_2vAcLDOGFRb-iPPVG" " />
+            </div>
+            <div class=" choice" id="scissors">
+                    <img
+                        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeAsJnqCD-dX8a586vqeyidqkXQOrTMg6jxevgsOFlUM72ZD-z" />
+                </div>
+            </div>
+
+            <div class="score-board">
+                <div class="score">
+                    <p id="user-score">0</p>
+                    <p>You</p>
+                </div>
+                <div class="score">
+                    <p id="comp-score">0</p>
+                    <p>Com</p>
+                </div>
+            </div>
+
+            <div class="msg-container">
+                <p id="msg">Play your move</p>
+            </div>
+        </div>
+
+
+        <div id="feedback">
+            <button id="feedbackButton">Give Feedback</button>
+        </div>
+
+
+        <div class="feedback-section">
+
+            <h2>We'd love your feedback!</h2>
+
+            <form action="//formspree.io/f/mqaznozy" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedbacktextarea" name="feedback" placeholder="Your feedback" required></textarea>
+
+                
+                <div class="button-container">
+                    <button type="submit" id="submitform">Submit</button>
+                    <button type="submit" id="gotohomepage">homePage</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="footerpage">
+            <footer>
+                <div class="profile">
+                    <img src="my_pic5.png" alt="Anurag Kumar" class="profile-pic">
+                    <span> ||🌟 Anurag Kumar 🌟|| </span>
+                </div>
+                <p>Copyright &copy; 2024 Rock Paper Scissors. All rights reserved.</p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/anurag_singh_3264/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anurag-kumar-ba3b252bb/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AnuragSingh7292" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="game.js"></script>
+</body>
+
+</html>
